@@ -29,15 +29,16 @@ def copySearched():
     pyautogui.sleep(0.5)
     pyautogui.click(634,139)#按下畫面打叉、去除搜尋結果
     pyautogui.sleep(0.5)
-
-    #換回試算表分頁
-    pyautogui.hotkey('command','option','left')
+    
+    pyautogui.hotkey('command','option','left')#換回試算表分頁
     pyautogui.sleep(0.5)
-    pyautogui.press(['right','right'])#移到正確輸入格
+    pyautogui.press('right')#移到正確輸入格
+    pyautogui.sleep(0.2)#停頓
+    pyautogui.press('right')
     pyautogui.hotkey('command','v')#貼上資料
     pyautogui.sleep(0.5)
     pyautogui.press(['left','left','down'])
     pyautogui.sleep(0.5)
 
-for i in range(1):#作幾次，看試算表有幾筆資料
+for i in range(20):#作幾次，看試算表有幾筆資料
     copySearched()
