@@ -4,7 +4,6 @@
 於 macbook air 2014 作業，瀏覽器爲 safari
 設定切換瀏覽器分頁之快捷鍵爲 command + option + 左右方向鍵
 測試專輯列表：https://docs.google.com/spreadsheets/d/1zcPXfjUMzrjbT6minYaC59XlzLpET1lzIn-OwfpUw38/edit#gid=0
-
 '''
 import pyautogui
 pyautogui.hotkey('command','tab')#切換回瀏覽器
